@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "TabTailor",
+  "description": "Easily customize your new tab background with videos, GIFs, or images",
+  "version": "0.1.0",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "icons": {
+    "16": "src/assets/16.png",
+    "32": "src/assets/32.png",
+    "48": "src/assets/48.png",
+    "128": "src/assets/128.png"
+  }
+}
