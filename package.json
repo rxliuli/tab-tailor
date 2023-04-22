@@ -1,0 +1,25 @@
+{
+  "name": "tab-tailor",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "pack-clean": "rimraf ./release && mkdir release",
+    "pack-chrome": "pnpm build && pnpm pack-clean && jszip-cli add dist/ -o ./release/tab-tailor-chrome.zip",
+    "docs-deploy": "gh-pages -d dist --dotfiles",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "2.0.0-beta.16",
+    "@ffflorian/jszip-cli": "^3.4.0",
+    "gh-pages": "^5.0.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.0"
+  },
+  "dependencies": {
+    "idb-keyval": "^6.2.0"
+  }
+}
