@@ -31,6 +31,26 @@ export function video(): Plugin {
       $style.innerHTML = backgroundVideoCss(`#${$video.id}`)
 
       document.body.append($video, $style)
+
+      // 假设函数 a 和 b 已经定义
+      function a() {
+        // console.log('页面不活跃或者已经离开')
+        $video.pause()
+      }
+
+      function b() {
+        // console.log('页面活跃或者已经打开')
+        $video.play()
+      }
+
+      // 监听 visibilitychange 事件
+      document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === 'hidden') {
+          a()
+        } else if (document.visibilityState === 'visible') {
+          b()
+        }
+      })
     },
   }
 }
