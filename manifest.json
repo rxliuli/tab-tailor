@@ -12,5 +12,10 @@
     "32": "src/assets/32.png",
     "48": "src/assets/48.png",
     "128": "src/assets/128.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "tab-tailor@rxliuli.com"
+    }
   }
 }
