@@ -184,7 +184,7 @@ export const App = observer(() => {
     store.dataUrl = URL.createObjectURL(data)
   })
   return (
-    <div className={'dark:bg-black dark:text-white'}>
+    <>
       {!state.loading && (
         <div>
           {!store.type && <DargArea />}
@@ -196,6 +196,6 @@ export const App = observer(() => {
           )}
         </div>
       )}
-    </div>
+    </>
   )
 })
