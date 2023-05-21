@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "TabTailor",
   "description": "Easily customize your new tab background with videos, GIFs, or images",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "action": {
     "default_popup": "index.html"
   },
@@ -14,5 +14,10 @@
     "32": "src/assets/32.png",
     "48": "src/assets/48.png",
     "128": "src/assets/128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tab-tailor@rxliuli.com"
+    }
   }
 }
